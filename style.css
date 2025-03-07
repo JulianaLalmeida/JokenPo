@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(60, 130, 130) ;
+}
+img{
+    width: 300px;
+    height: 300px;
+    display:block;
+    margin: 20px auto 0;
+}
+.img{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+button{
+    padding: 10px;
+    border:none;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: 15px;
+    background-color: rgb(66, 64, 60);
+    font-size: 50px;
+}
+button:hover{
+    opacity: .8;
+}
+button:active{
+    opacity: .6;
+}
+h1{
+    font-family: 'Sigmar', sans-serif;
+    font-weight: 100;
+    font-size: 70px;
+}
+p{
+    font-family: 'VT323', sans-serif;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 40px;
+}
+.result{
+    color: rgb(225, 123, 26);
+}
+.yourscore span{
+    color: blue;
+}
+.machinescore span{
+    color: red;
+}
+
+@media screen and (max-width:900px){
+    body{
+        height: 100vh;
+    }
+    .img{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+    }
+    img{
+        height: 250px;
+        width: 250px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    button{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
